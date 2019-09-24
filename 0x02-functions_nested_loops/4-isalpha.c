@@ -2,7 +2,7 @@
  /**
   *_isalpha : check the code if c letter is lowercase or uppercase
   *@c : lower and uppercase letters
-  *
+  *Return (1)
   */
 int _isalpha(int c)
 {

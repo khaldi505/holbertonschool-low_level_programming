@@ -1,4 +1,5 @@
 #include "holberton.h"
+/* using  putchar */
 
 int main(void)
 {

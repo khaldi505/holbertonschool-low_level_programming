@@ -2,11 +2,11 @@
 
 int main(void)
 {
-int c;
+int h;
 char string[] = "Holberton";
-for (c = 0; c < 9 ; c++)
+for (h = 0; h < 9; h++)
 {
-_putchar(string[c]);
+_putchar(string[h]);
 }
 _putchar('\n');
 return (0);

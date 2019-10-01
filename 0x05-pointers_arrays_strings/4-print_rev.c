@@ -1,11 +1,13 @@
 #include "holberton.h"
 
-void print_rev(char *str)
+void print_rev(char *s)
 {
-int i = 0;
-for (i = 0; *(str + i); i++)
-;
-for (; i > 0; i--)
-_putchar(*(str + i - 1));
+int x;
+x = 0;
+while (*(s + x) != '\0')
+x++;
+x--;
+for (; x >= 0; x--)
+_putchar(*(s + x));
 _putchar('\n');
 }

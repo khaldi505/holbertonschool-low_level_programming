@@ -5,6 +5,7 @@
 *@b: ponter to b
 *Return: Nothing
 */
+void swap_int(int *a, int *b)
 {
 int p;
 p = *a;

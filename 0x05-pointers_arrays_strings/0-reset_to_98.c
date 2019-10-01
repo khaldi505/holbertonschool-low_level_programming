@@ -2,8 +2,10 @@
 
 /**
 *reset_to_98 - a function that takes a pointer and updates
-*@n : is an int
+*@n : pointer and the variable n
+*Return: 0
 */
+
 
 void reset_to_98(int *n)
 {

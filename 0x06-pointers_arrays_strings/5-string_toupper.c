@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
  * *string_toupper - check the code for Holberton School students.
- *@s : is a char 
+ *@s : is a char
  * Return: nothing
- */ 
+ */
 char *string_toupper(char *s)
 {
 int i;

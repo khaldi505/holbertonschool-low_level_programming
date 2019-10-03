@@ -6,13 +6,12 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int s1, s2;
-s1 = '0';
-while (dest[s1] != '\0')
-s1++;
-s2 = '0';
-while (s2 <= s1)
-s2++;
-dest[s1 + s2] = src[s2];
+int i, k;
+i = 0;
+while (dest[i] != '\0')
+i++;
+for (k = 0; src[k] != '\0'; k++, i++)
+dest[i] = src[k];
+dest[i] = '\0';
 return (dest);
 }

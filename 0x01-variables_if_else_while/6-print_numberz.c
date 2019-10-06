@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - 6
- * Aladin Bensassi
+ *
  * Return: Always 0 (Success)
  */
 int main(void)

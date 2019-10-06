@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * putchar a-z
- * Return: Always 0 (Success)
+ * main - the main function
+ *
+ * Return: void
  */
 int main(void)
 {

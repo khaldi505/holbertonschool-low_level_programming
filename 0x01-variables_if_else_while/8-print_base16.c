@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-int i;
-int j;
-for (i = '0'; i <= '9'; i++)
+char numbers;
+int aTof;
+for (numbers = '0'; numbers <= '9'; numbers++)
 {
-putchar (i);
+putchar (numbers);
 }
-for (j = 'a'; j <= 'f'; j++)
+for (aTof = 'a'; aTof < 'g'; aTof++)
 {
-putchar (j);
+putchar (aTof);
 }
 putchar ('\n');
 return (0);

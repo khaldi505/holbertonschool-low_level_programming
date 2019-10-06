@@ -1,17 +1,17 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * main - the main function,prints Holberton, followed by a new line
  *
- * Return: Always 0.
+ * Return: 0.
  */
 
 int main(void)
 {
-int h;
-char string[] = "Holberton";
-for (h = 0; h < 9; h++)
+int a;
+char b[] = "Holberton";
+for (a = 0 ; a <= 9; a++)
 {
-_putchar(string[h]);
+_putchar(b[a]);
 }
 _putchar('\n');
 return (0);

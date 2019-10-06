@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * main - 8
- * Aladin Bensassi
- * Return: Always 0 (Success)
+ * main - the main funcion
+ *@i; char type
+ *@j; char type
+ * Return: 0
  */
 int main(void)
 {

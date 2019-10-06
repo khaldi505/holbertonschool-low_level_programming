@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main - 7
- * Aladin Bensassi
- * Return: Always 0 (Success)
+ * main - the main function.
+ * 
+ * Return: 0
  */
 int main(void)
 {
-char i;
-for (i = 'z'; i >= 'a'; i--)
+char rev;
+for (rev = 'z'; rev >= 'a'; rev--)
 {
-putchar(i);
+putchar(rev);
 }
 putchar('\n');
 return (0);

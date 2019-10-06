@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main - 6
+ * main - the main function.
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
-int i;
-for (i = 48; i <= 57; i++)
+int numb;
+for (numb = 48; numb <= 57; numb++)
 {
-putchar(i);
+putchar(numb);
 }
 putchar('\n');
 return (0);

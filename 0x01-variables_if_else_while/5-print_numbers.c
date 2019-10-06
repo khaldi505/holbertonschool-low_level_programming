@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Aladin Bensassi
- * Return: Always 0 (Success)
+ * main - the main function
+ *
+ * Return: Always 0
  */
 int main(void)
 {
-int i;
-for (i = '0'; i <= '9'; i++)
-putchar (i);
+int numb;
+for (numb = '0'; numb <= '9'; numb++)
+putchar (numb);
 putchar ('\n');
 return (0);
 }

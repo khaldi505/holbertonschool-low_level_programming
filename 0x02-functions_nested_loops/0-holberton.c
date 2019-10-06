@@ -1,6 +1,10 @@
 #include "holberton.h"
 /**
+<<<<<<< HEAD
  * main - the main function,prints Holberton, followed by a new line
+=======
+ * main - he main function
+>>>>>>> 8eed8ff4f5e387f0562821c2f6899cda8e71fb0c
  *
  * Return: 0.
  */

@@ -4,8 +4,8 @@
  *@s: char type
  *@b: char type
  *@n: unsigend int
- *Return:  a pointer to the memory area s
-uy */
+ *Return:  a pointer to the memory area suy
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
 unsigned int a;

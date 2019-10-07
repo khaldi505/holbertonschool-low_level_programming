@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
- * _isalpha - entry point
- * @c : bumber to check
- * Return: Always 0 (Success)
+ * _isalpha - checks for alphabetic character.
+ * @c : the variable we want to check
+ * Return: 1 if c is a letter, lowercase or uppercase
  */
 int _isalpha(int c)
 {
-if (((c >= 97) && (c <= 122)) || ((c >= 65) && (c <= 90)))
+if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'z')))
 return (1);
 else
 return (0);

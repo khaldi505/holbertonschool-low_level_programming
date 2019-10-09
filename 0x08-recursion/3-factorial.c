@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * factorial - function that returns the factorial a given numer 
+ * factorial - function that returns the factorial a given numer
  *@n: int type
  *Return: the factorial of a given number.
  */

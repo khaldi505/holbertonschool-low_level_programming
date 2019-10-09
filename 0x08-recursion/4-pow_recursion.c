@@ -1,4 +1,10 @@
 #include "holberton.h"
+/**
+ *_pow_recursion - function that returns the value of x and y
+ *@x:int type
+ *@y:int type
+ *Return: return an intger
+ */
 int _pow_recursion(int x, int y)
 {
 if (y < 0)

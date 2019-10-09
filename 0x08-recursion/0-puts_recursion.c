@@ -15,9 +15,8 @@ if (s[i] == '\0')
 _putchar('\n');
 
 }
-if (s[i] > '\0')
+if (s[i] != '\0')
 {
 _puts_recursion(s + i);
 }
-
 }

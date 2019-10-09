@@ -1,22 +1,19 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
- *print_alphabet_x10 - prints the alphabet from a to z
+ *p
  *
- *Return: 0;
- */
+ *
+ **/
 void print_alphabet_x10(void)
 {
-int ab, i;
-ab = 'a';
+int i;
+char abc;
 for (i = 0; i < 10; i++)
 {
-while (ab <= 'z')
+for (abc = 'a'; abc <= 'z'; abc++)
 {
-_putchar(ab);
-ab++;
+_putchar(abc);
 }
 _putchar('\n');
-ab = 'a';
 }
 }

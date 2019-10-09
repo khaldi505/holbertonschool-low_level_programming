@@ -17,5 +17,6 @@ _puts_recursion(s + i);
 if (s[i] == '\0')
 {
 _putchar('\n');
+return;
 }
 }

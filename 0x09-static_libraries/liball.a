@@ -1,0 +1,50 @@
+!<arch>
+//                                              18        `
+8-print_square.c/
+0-isupper.c/    0           0     0     644     202       `
+#include "holberton.h"
+/**
+ *_isupper - checks for an uppercase letter.
+ *@c : The character to check
+ *Return: 0 or 1
+ */
+int _isupper(int c)
+{
+if (c >= 'A' && c <= 'Z')
+return (1);
+else
+return (0);
+}
+/0              0           0     0     644     326       `
+#include "holberton.h"
+
+/**
+ * print_square - prints a square of given size
+ * @size: size of square
+ * Return: none;
+ */
+
+void print_square(int size)
+{
+int count, count2;
+
+if (size <= 0)
+_putchar('\n');
+for (count = 0; count < size; count++)
+{
+for (count2 = 0; count2 < size; count2++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}
+}
+main.c/         0           0     0     644     153       `
+#include "holberton.h"
+
+int main(void)
+{
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
+}
+

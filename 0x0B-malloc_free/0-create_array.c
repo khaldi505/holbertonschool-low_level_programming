@@ -12,13 +12,13 @@ char *ar;
 unsigned int i = 0;
 if (size == 0)
 {
-return NULL;
+return (NULL);
 }
-ar = malloc (size * sizeof(char));
+ar = malloc(size * sizeof(char));
 if (ar == NULL)
 return (NULL);
-for(i = 0; i < size;i++)
-ar[i] = c ;
+for (i = 0; i < size; i++)
+ar[i] = c;
 return (ar);
 }
 

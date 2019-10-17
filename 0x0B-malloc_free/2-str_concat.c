@@ -12,10 +12,16 @@ char *s;
 unsigned int i, j, len;
 j = 0;
 i = 0;
+if (s1 != NULL)
+{
 while (s1[i] != '\0')
 i++;
+}
+if (s2[j] != '\0')
+{
 while (s2[j] != '\0')
 j++;
+}
 s = malloc(sizeof(char) * (i + j));
 if (s == NULL)
 {

@@ -17,11 +17,15 @@ i++;
 while (s2[j] != '\0')
 j++;
 s = malloc(sizeof(char) * (i + j));
+if (s == NULL)
+{
+free(s);
+return (NULL);
+}
 for (len = 0; len <= i; len++)
 s[len] = s1[len];
 for (len = 0; len <= j; len++)
 s[i + len] = s2[len];
 return (s);
 }
-
 

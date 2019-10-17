@@ -12,20 +12,23 @@ char *s;
 unsigned int i, j, len;
 j = 0;
 i = 0;
-if (s1 != NULL)
+if (s1 != '\0')
 {
 while (s1[i] != '\0')
+{
 i++;
 }
-if (s2[j] != '\0')
+}
+if (s2 != '\0')
 {
 while (s2[j] != '\0')
+{
 j++;
+}
 }
 s = malloc(sizeof(char) * (i + j));
 if (s == NULL)
 {
-free(s);
 return (NULL);
 }
 for (len = 0; len <= i; len++)

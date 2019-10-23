@@ -1,4 +1,6 @@
-#include "calc.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include "3-calc.h"
 /**
  *op_add - returns the sum of a and b
  *@a: int
@@ -54,4 +56,5 @@ else
 {
 return (a % b);
 }
+ return (0);
 }

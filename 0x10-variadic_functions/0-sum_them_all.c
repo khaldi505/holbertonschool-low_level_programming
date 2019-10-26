@@ -18,6 +18,7 @@ va_start(valsum, n);
 for (i = 0; i < n; i++)
 {
 sum += va_arg(valsum, unsigned int);
+va_end(valsum);
 }
 return (sum);
 }

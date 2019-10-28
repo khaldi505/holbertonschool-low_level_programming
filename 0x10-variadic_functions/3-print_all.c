@@ -19,25 +19,29 @@ while (format[j])
 {
 switch (format[j])
 {
-case 'c':
+case 'c':{
 c = va_arg(atp, int);
 printf("%c", c);
 break;
-case 'i':
+}
+case 'i':{
 i = va_arg(atp, int);
 printf("%i", i);
 break;
-case 'f':
+}
+case 'f':{
 f = va_arg(atp, double);
 printf("%lf", f);
 break;
-case 's':
+}
+case 's':{
 s = va_arg(atp, char *);
 if (s == NULL)
 {
 printf("nil");
 }
 printf("%s", s);
+}
 }
 j++;
 }

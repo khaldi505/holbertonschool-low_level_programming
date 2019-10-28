@@ -13,36 +13,34 @@ char c;
 char *s;
 float f;
 va_start(atp, format);
-while (format[j])
+while (format && format[j])
 {
 switch (format[j])
 {
-case 'c':{
+case 'c':
 c = va_arg(atp, int);
 printf("%c", c);
 break;
-}
-case 'i':{
+case 'i':
 i = va_arg(atp, int);
-printf("%i", i);
+printf("%d", i);
 break;
-}
-case 'f':{
+case 'f':
 f = va_arg(atp, double);
-printf("%lf", f);
+printf("%f", f);
 break;
-}
-case 's':{
+case 's':
 s = va_arg(atp, char *);
 if (s == NULL)
 {
-printf("nil");
+printf("(nil)");
+break;
 }
 printf("%s", s);
-}
+break;
 }
 j++;
 }
+va_end(atp);
 printf("\n");
-return;
 }

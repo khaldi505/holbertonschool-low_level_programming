@@ -11,7 +11,7 @@ if (d == NULL)
 {
 return;
 }
-if (d->name == NULL)
+if ((d->name == NULL) && (d->owner == NULL))
 {
 printf("Name: (nil)");
 }

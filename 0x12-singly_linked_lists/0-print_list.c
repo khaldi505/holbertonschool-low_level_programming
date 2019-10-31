@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 size_t i = 0;
 const list_t *tmpp;
 tmpp = h;
-if (tmpp->str == NULL)
+if ((tmpp->str == NULL) && (tmpp->len == '\0'))
 {
 printf("[0] (nil)\n");
 tmpp = tmpp->next;

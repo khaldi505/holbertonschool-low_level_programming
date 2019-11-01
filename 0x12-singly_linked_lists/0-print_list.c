@@ -19,13 +19,13 @@ while (tmpp != NULL)
 {
 if (tmpp->str == NULL)
 {
-printf("[0] (nil)\n");
+printf("[%d] (nil)\n", tmpp->len);
 tmpp = tmpp->next;
 i++;
 }
 else
 {
-printf("[%d]%s\n", tmpp->len, tmpp->str);
+printf("[%d] %s\n", tmpp->len, tmpp->str);
 tmpp = tmpp->next;
 i++;
 }

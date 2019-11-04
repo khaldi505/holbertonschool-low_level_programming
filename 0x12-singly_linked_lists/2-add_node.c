@@ -16,6 +16,7 @@ tmp = (malloc(sizeof(list_t)));
 if ((str == NULL) || (tmp->str != NULL))
 {
 return (NULL);
+free(tmp);
 }
 while (str[len])
 len++;

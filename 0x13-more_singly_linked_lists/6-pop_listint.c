@@ -6,13 +6,14 @@
 */
 int pop_listint(listint_t **head)
 {
-int nu;
-listint_t *pop = (*head)->next;
-if (*head == NULL)
-return (0);
+int nu = 0;
+listint_t *pop = NULL;
+if (*head != NULL)
+{
 pop = (*head)->next;
-n = (*head)->n;
-free(head);
+nu = (*head)->n;
+free(*head);
 *head = pop;
+}
 return (nu);
 }

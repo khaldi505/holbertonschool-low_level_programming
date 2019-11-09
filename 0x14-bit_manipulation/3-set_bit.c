@@ -10,7 +10,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 unsigned int new;
 new = (1 << index) | *n;
-if (new < 31)
+if (index > 31)
 return (-1);
 else
 *n = new;

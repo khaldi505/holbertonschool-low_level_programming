@@ -12,7 +12,9 @@ if (filename == NULL)
 return (-1);
 i = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 if (i == -1)
-return (0);
+return (-1);
+if (text_content == NULL)
+return (1);
 while (text_content[c] != '\0')
 c++;
 w = write(i, text_content, c);

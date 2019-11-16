@@ -16,7 +16,6 @@ int i = open(filename, O_RDONLY);
 if (i == -1)
 {
 return (0);
-close(i);
 }
 char *buf;
 buf = malloc(sizeof(char) * letters);
@@ -26,7 +25,7 @@ if (r == -1)
 {
 return (0);
 }
-w = write(STDOUT_FILENO, buf, letters);
-close(w);
+w = write(STDOUT_FILENO, buf, r + 1);
+close(i);
 return (w);
 }

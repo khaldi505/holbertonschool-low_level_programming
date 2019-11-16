@@ -23,5 +23,5 @@ return (-1);
 }
 w = write(1, buf, letters);
 close(w);
-return (letters);
+return (w);
 }

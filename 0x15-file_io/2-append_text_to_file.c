@@ -14,6 +14,8 @@ if (i == -1)
 {
 return (-1);
 }
+if (text_content == NULL)
+return (1);
 while(text_content[co] != '\0')
 co++;
 w = write(i, text_content, co);

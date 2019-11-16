@@ -12,7 +12,7 @@ if (filename == NULL)
 {
 return (-1);
 }
-i = open(filename, O_CREAT | O_RDWR, 600);
+i = open(filename, O_CREAT | O_RDWR | O_TRUNC, 600);
 w = write(i, text_content, sizeof(text_content));
 if (w == -1)
 return (-1);

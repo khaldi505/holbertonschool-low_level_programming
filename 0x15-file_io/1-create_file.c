@@ -15,8 +15,6 @@ return (-1);
 i = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 if (i == -1)
 return (0);
-if (text_content == NULL)
-return (0);
 w = write(i, text_content, sizeof(text_content));
 if (w == -1)
 return (-1);

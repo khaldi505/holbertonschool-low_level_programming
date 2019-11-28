@@ -9,6 +9,7 @@ void jack_bauer(void)
 int min, hours;
 min = 0;
 hours = 0;
+
 while (min <= 60)
 {
 if (min == 60)
@@ -16,15 +17,12 @@ if (min == 60)
 hours = hours + 1;
 min = 0;
 }
-if ((hours < 10) && (min < 10))
-{
-_putchar(hours + '0');
+_putchar((hours / 10) + '0');
+_putchar((hours % 10) + '0');
 _putchar(':');
-_putchar(min + '0');
+_putchar((min / 10) + '0');
+_putchar((min % 10) + '0');
 _putchar('\n');
-}
-else
-printf("%d : %d\n", hours, min);
 min++;
 if ((hours == 23) && (min == 60))
 {

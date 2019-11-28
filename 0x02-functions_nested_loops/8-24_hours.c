@@ -1,25 +1,29 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- * largest_number - returns the largest of 3 numbers
- * @a: first integer
- * @b: second integer
- * @c: third integer
- * Return: largest number
- */
-
-int largest_number(int a, int b, int c)
+*jack_bauer -prints every minute of the day of Jack Bauer
+*Return: void
+*/
+void jack_bauer(void)
 {
-int largest;
-
-if (a > b && a > c)
-largest = a;
-else if (b > a && b > c)
-largest = b;
-else if (a == b)
-largest = a;
+int min, hours;
+min = 00;
+hours = 00;
+while (min <= 60)
+{
+if (min == 60)
+{
+hours = hours + 1;
+min = 0;
+}
+if ((hours < 10) && (min < 10))
+printf("00 : 0%d\n", min);
 else
-largest = c;
-
-return (largest);
+printf("%d : %d\n", hours, min);
+min++;
+if ((hours == 23) && (min == 60))
+{
+break;
+}
+}
 }

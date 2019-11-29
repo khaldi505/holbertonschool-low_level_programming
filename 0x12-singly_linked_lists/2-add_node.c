@@ -15,7 +15,7 @@ list_t *tmp;
 tmp = (malloc(sizeof(list_t)));
 if (tmp == NULL)
 {
-return (-1);
+return (NULL);
 }
 if ((str == NULL) || (tmp->str != NULL))
 {

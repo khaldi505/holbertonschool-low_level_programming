@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 /**
 *main - entry point (main function)
 *
@@ -6,14 +8,7 @@
 */
 int main(void)
 {
-char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-int i;
-i = 0;
-while (str[i] != '\0')
-{
-putchar (str[i]);
-i++;
-}
-putchar ('\n');
+char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write (STDOUT_FILENO, str, strlen(str));
 return (1);
 }

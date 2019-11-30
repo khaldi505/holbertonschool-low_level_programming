@@ -14,6 +14,6 @@ while (str[i] != '\0')
 {
 i++;
 }
-write(2, str, i + 1);
+write(2, str, i);
 return (1);
 }

@@ -7,7 +7,13 @@
 */
 int main(void)
 {
+int i;
+i = 0;
 char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-write (STDOUT_FILENO, str, strlen(str));
+while (str[i] != '\0')
+{
+i++;
+}
+write(STDOUT_FILENO, str, i);
 return (1);
 }

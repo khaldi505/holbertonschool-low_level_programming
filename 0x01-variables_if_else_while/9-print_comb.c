@@ -6,8 +6,6 @@
  */
 int main(void)
 {
-int separator;
-separator = 44;
 int n;
 n = '0';
 while (n <= '9')
@@ -15,8 +13,8 @@ while (n <= '9')
 putchar(n);
 if (n <= '8')
 {
+putchar(',');
 putchar(' ');
-putchar(separator);
 }
 n++;
 }

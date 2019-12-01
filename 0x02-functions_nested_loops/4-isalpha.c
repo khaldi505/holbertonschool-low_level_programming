@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _isalpha - checks for alphabetic character.
- * @c : the variable we want to check
+ * @c : the ascii of the character we want to check
  * Return: 1 if c is a letter, lowercase or uppercase
  */
 int _isalpha(int c)

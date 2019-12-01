@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ *_islower - checks for lowercase character.
+ *@c: is the ascii of the character
  * Return: Always 0.
  */
-int main(void)
+int _islower(int c)
 {
-    int r;
-
-    r = abs(-1);
-    printf("%d\n", r);
-    return (0);
+if ((c >= 'a') && (c <= 'z'))
+{
+return (1);
+}
+else
+return (0);
 }

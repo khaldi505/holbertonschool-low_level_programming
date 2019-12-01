@@ -9,11 +9,11 @@ int main(void)
 int separator;
 separator = 44;
 int n;
-n = 48;
-while (n <= 57)
+n = '0';
+while (n <= '9')
 {
 putchar(n);
-if (n <= 56)
+if (n <= '8')
 {
 putchar(' ');
 putchar(separator);

@@ -12,9 +12,12 @@ int n;
 n = 48;
 while (n <= 57)
 {
+
 putchar(n);
-putchar(separator);
 putchar(' ');
+if (n <= 56)
+putchar(separator);
+
 n++;
 }
 putchar('\n');

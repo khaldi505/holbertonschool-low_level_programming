@@ -1,20 +1,17 @@
 #include "holberton.h"
 /**
-* puts2 - it reverses a string in r
-*@str: pointer to a string
-* Return: void
+* puts2 - prints every other character of a string
+*@str: string
+* Return: nothing
 */
 void puts2(char *str)
 {
-int j, i = 0;
-while (*(str + i) != '\0')
+int i;
+i = 0;
+while (str[i] != '\0')
 {
-i++;
-}
-i = i - 1;
-for (j = 0; j <= i; j += 2)
-{
-_putchar(*(str + j));
+_putchar(str[i]);
+i = i + 2;
 }
 _putchar('\n');
 }

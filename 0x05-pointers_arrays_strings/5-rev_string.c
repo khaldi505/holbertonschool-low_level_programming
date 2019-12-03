@@ -10,7 +10,7 @@ int len;
 len = 0;
 int i;
 i = 0;
-char temp = 'a';
+char temp;
 while (s[len] != '\0')
 len++;
 len--;

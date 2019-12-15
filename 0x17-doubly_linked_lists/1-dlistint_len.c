@@ -2,7 +2,7 @@
 /**
  *dlistint_len - is a function that returns the length of a list
  *@h: head of the list , the first node
- *Return: how many elementes in the list 
+ *Return: how many elementes in the list
  */
 size_t dlistint_len(const dlistint_t *h)
 {

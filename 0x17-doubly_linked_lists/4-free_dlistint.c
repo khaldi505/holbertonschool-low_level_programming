@@ -1,5 +1,9 @@
 #include "lists.h"
-
+/**
+*free_dlistint -  a function that free a dlistint_t list.
+*@head: the head of the list
+*Return: nothing
+*/
 void free_dlistint(dlistint_t *head)
 {
 while(head != NULL)

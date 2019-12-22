@@ -9,18 +9,19 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 dlistint_t *current_node;
 unsigned int nth = 0;
+if (head == NULL)
+return (NULL);
 while (head != NULL)
 {
 if (nth + 1 == index)
 {
-if (head->next == NULL)
-return (NULL);
-else
 current_node = head->next;
 break;
 }
 nth++;
 head = head->next;
 }
+if (current_node == NULL)
+return (NULL);
 return (current_node);
 }

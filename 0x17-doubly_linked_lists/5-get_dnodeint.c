@@ -13,6 +13,9 @@ while (head != NULL)
 {
 if (nth + 1 == index)
 {
+if (head->next == NULL)
+return (NULL);
+else
 current_node = head->next;
 break;
 }

@@ -13,7 +13,7 @@ new = malloc(sizeof(hash_table_t));
 if (new == NULL)
 return (NULL);
 new->size = size;
-new->array = (hash_node_t **) malloc(sizeof(hash_table_t) * size);
+new->array = malloc(sizeof(hash_node_t **));
 if (!(new->array))
 {
 free(new);

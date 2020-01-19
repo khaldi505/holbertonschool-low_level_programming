@@ -9,9 +9,7 @@ return (NULL);
 hash_table_t *new;
 new = (hash_table_t *) malloc(sizeof(hash_table_t));
 if (new == NULL)
-return(NULL);
-
+return (NULL);
 new->size = size;
 return(new);
-
 }

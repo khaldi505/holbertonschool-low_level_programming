@@ -14,5 +14,10 @@ if (new == NULL)
 return (NULL);
 new->size = size;
 new->array = malloc(sizeof(hash_table_t) * size);
+if (!(new->array))
+{
+free(new);
+return (NULL);
+}
 return (new);
 }

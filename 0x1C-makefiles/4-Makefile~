@@ -1,0 +1,2 @@
+clean: rm -f *~
+oclean: rm -f *.o

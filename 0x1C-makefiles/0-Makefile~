@@ -1,7 +1,0 @@
-files: main.c holberton.c
-    gcc main.c holberton.c -o holberton
-
-.PHONY: clean
-
-clean:
-    rm -f holberton *.o

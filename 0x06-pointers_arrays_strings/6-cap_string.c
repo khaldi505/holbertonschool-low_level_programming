@@ -11,7 +11,7 @@ int counter = 0;
 while (s[counter] != '\0')
 {
 if ((s[counter - 1]) && (s[counter - 1] == ' ' ||
-s[counter - 1] == '\n' || s[counter - 1] == '\t'))
+s[counter - 1] == '\n' || s[counter - 1] == '\t' || s[counter - 1] == '.'))
 if (s[counter] >= 'a' || (s[counter] <= 'z' && !(s[counter] < 'a')))
 {
 s[counter] -= 32;

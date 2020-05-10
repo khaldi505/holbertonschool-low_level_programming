@@ -8,6 +8,9 @@ char *cap_string(char *s)
 {
 int counter = 0;
 
+if ((s[counter] >= 'a' || (s[counter] <= 'z' && !(s[counter] < 'a'))))
+s[counter] -= 32;
+
 while (s[counter] != '\0')
 {
 if ((s[counter - 1]) && (s[counter - 1] == ' ' ||

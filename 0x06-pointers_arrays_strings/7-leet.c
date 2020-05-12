@@ -11,7 +11,7 @@ int counter, sec = 0;
 
 char uppercase[] = {'a', 'e', 'o', 't', 'l'};
 char lowercase[] = {'A', 'E', 'O', 'T', 'L'};
-int numbers[] = {4, 3, 0, 7, 1};
+int numbers[] = {'4', '3', '0', '7', '1'};
 
 for (counter = 0; s[counter] != '\0'; counter++)
 {

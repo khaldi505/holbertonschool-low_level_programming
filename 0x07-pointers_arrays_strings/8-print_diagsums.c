@@ -11,11 +11,13 @@ void print_diagsums(int *a, int size)
 int ar = size * size;
 int result = 0;
 int sum = 0;
-for (int i = 0; i < ar; i += size + 1)
+int i;
+int x;
+for (i = 0; i < ar; i += size + 1)
 {
 result += a[i];
 }
-for (int x = size - 1; x < ar - 1; x += (size - 1))
+for (x = size - 1; x < ar - 1; x += (size - 1))
 {
 sum += a[x];
 }

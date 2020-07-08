@@ -8,14 +8,16 @@
 */
 void print_diagsums(int *a, int size)
 {
-int x = 0;
-int i;
+int ar = size * size;
 int result = 0;
-int sum = a[x];
-for (i = 0; i < size; i++)
+int sum = 0;
+for (int i = 0; i < ar; i += size + 1)
 {
-sum += *(a + i * size + i);
-result += *(a + (i * size) + (size - 1 - i));
+result += a[i];
 }
-printf("%d, %d\n", sum, result);
+for (int x = size - 1; x < ar - 1; x += (size - 1))
+{
+sum += a[x];
+}
+printf("%d, %d\n", result, sum);
 }

@@ -14,7 +14,7 @@ int i;
 int j;
 int x = 0;
 char *current;
-char *result[argc - 1];
+char *result[argc];
 int another = 0;
 int fresult = 0;
 if (argc <= 1)
@@ -34,6 +34,7 @@ return (1);
 }
 }
 result[x] = argv[i];
+if (i != 1)
 x++;
 }
 

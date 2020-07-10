@@ -12,6 +12,7 @@ while (string[x] != '\0')
 {
 x++;
 }
+x++;
 return (x);
 }
 
@@ -24,19 +25,31 @@ return (x);
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+int x = 0;
 dog_t *my_dog;
 my_dog = malloc(sizeof(dog_t));
 if (!my_dog)
 return (NULL);
-(*my_dog).name = malloc(sizeof(char *) * _strlen(name));
+(*my_dog).name = malloc(sizeof(char) * _strlen(name));
 if (!(*my_dog).name)
 return (NULL);
-(*my_dog).name = name;
+while (name[x] != '\0')
+{
+(*my_dog).name[x] = name[x];
+x++;
+}
+(*my_dog).name[x + 1] = '\0';
 (*my_dog).age = age;
-(*my_dog).owner = malloc(sizeof(char *) * _strlen(owner));
+(*my_dog).owner = malloc(sizeof(char) * _strlen(owner));
 if (!(*my_dog).owner)
 return (NULL);
-(*my_dog).owner = owner;
+x = 0;
+while (owner[x] != '\0')
+{
+(*my_dog).owner[x] = owner[x];
+x++;
+}
+(*my_dog).owner[x + 1] = '\0';
 
 return (my_dog);
 }

@@ -12,7 +12,6 @@ while (string[x] != '\0')
 {
 x++;
 }
-x++;
 return (x);
 }
 
@@ -33,33 +32,34 @@ if (my_dog == NULL)
 free(my_dog);
 return (NULL);
 }
-(*my_dog).name = malloc(sizeof(char *) * _strlen(name));
+my_dog->name = malloc(sizeof(char *) * _strlen(name) + 1);
 if ((*my_dog).name == NULL)
 {
-free((*my_dog).name);
+free(my_dog->name);
 return (NULL);
 }
 else
 {
-while (name[x] != '\0')
+while (name[x] != _strlen(name))
 {
-(*my_dog).name[x] = name[x];
+my_dog->name[x] = name[x];
 x++;
 }
+my_dog->name[x] = name[x];
 }
-(*my_dog).age = age;
-(*my_dog).owner = malloc(sizeof(char *) * _strlen(owner));
-
+(*my_dog).owner = malloc(sizeof(char *) * _strlen(owner) + 1);
 if ((*my_dog).owner == NULL)
 {
-free((*my_dog).owner);
+free(my_dog->owner);
 return (NULL);
 }
 x = 0;
 while (owner[x] != '\0')
 {
-(*my_dog).owner[x] = owner[x];
+my_dog->owner[x] = owner[x];
 x++;
 }
+my_dog->owner[x] = owner[x];
+my_dog->age = age;
 return (my_dog);
 }

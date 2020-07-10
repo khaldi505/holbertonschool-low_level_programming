@@ -38,7 +38,6 @@ while (name[x] != '\0')
 (*my_dog).name[x] = name[x];
 x++;
 }
-(*my_dog).name[x + 1] = '\0';
 (*my_dog).age = age;
 (*my_dog).owner = malloc(sizeof(char) * _strlen(owner));
 if (!(*my_dog).owner)
@@ -49,7 +48,6 @@ while (owner[x] != '\0')
 (*my_dog).owner[x] = owner[x];
 x++;
 }
-(*my_dog).owner[x + 1] = '\0';
 
 return (my_dog);
 }

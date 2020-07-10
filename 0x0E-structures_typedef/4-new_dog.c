@@ -32,22 +32,21 @@ free(my_dog);
 return (NULL);
 }
 my_dog->name = malloc(sizeof(char *) * _strlen(name));
-if ((*my_dog).name == NULL)
-free(my_dog->name);
 my_dog->owner = malloc(sizeof(char *) * _strlen(owner));
-if ((*my_dog).owner == NULL)
+if ((*my_dog).name == NULL || (*my_dog).owner == NULL)
 {
+free(my_dog);
+free(my_dog->name);
 free(my_dog->owner);
 return (NULL);
 }
-else if ((*my_dog).name != NULL && (*my_dog).owner != NULL)
-{
+
 while (x < _strlen(owner))
 {
 my_dog->owner[x] = owner[x];
 x++;
 }
-my_dog->name[x] = name[x];
+my_dog->owner[x] = owner[x];
 x = 0;
 while (x < _strlen(name))
 {
@@ -55,7 +54,7 @@ my_dog->name[x] = name[x];
 x++;
 }
 my_dog->name[x] = name[x];
-}
+
 my_dog->age = age;
 
 return (my_dog);

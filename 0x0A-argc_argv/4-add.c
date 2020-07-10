@@ -34,7 +34,6 @@ return (1);
 }
 }
 result[x] = argv[i];
-if (i != 1)
 x++;
 }
 

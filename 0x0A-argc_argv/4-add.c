@@ -14,7 +14,7 @@ int i;
 int j;
 int x = 0;
 char *current;
-char *result[80];
+char *result[10000];
 int another = 0;
 int fresult = 0;
 if (argc <= 1)

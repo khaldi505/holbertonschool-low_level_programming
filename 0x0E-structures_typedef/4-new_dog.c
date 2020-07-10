@@ -35,9 +35,9 @@ my_dog->name = malloc(sizeof(char *) * _strlen(name));
 my_dog->owner = malloc(sizeof(char *) * _strlen(owner));
 if ((*my_dog).name == NULL || (*my_dog).owner == NULL)
 {
-free(my_dog);
 free(my_dog->name);
 free(my_dog->owner);
+free(my_dog);
 return (NULL);
 }
 else if ((*my_dog).name != NULL && (*my_dog).owner != NULL)

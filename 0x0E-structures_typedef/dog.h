@@ -1,5 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
+typedef struct dog dog_t;
 /**
 *struct dog - a struct holding the dog information
 *@name: char string

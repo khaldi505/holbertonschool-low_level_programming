@@ -57,8 +57,6 @@ x++;
 my_dog->name[x] = name[x];
 }
 my_dog->age = age;
-free(my_dog->name);
-free(my_dog->owner);
-free(my_dog);
+
 return (my_dog);
 }

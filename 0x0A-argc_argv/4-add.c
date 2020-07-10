@@ -14,7 +14,7 @@ int i;
 int j;
 int x = 0;
 char *current;
-char *result[argc - 1];
+char *result[80];
 int another = 0;
 int fresult = 0;
 if (argc <= 1)
@@ -43,5 +43,5 @@ fresult += atoi(result[another]);
 another++;
 }
 printf("%d\n", fresult);
-return(0);
+return (0);
 }

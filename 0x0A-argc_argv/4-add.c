@@ -43,5 +43,5 @@ fresult += atoi(result[another]);
 another++;
 }
 printf("%d\n", fresult);
-return(0);
+return (0);
 }

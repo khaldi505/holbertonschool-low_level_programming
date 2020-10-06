@@ -1,8 +1,9 @@
 #include "search_algos.h"
 /**
  *print_array - a function will print from n th element until to the n
+ *@array: array
  *@from: from where you want to start printing
- * @to: to when you want to stop
+ *@to: to when you want to stop
  *Return: nothing
  */
 void print_array(int *array, size_t from, size_t to)

@@ -31,26 +31,31 @@ int binary_search(int *array, size_t size, int value)
 size_t L = 0;
 size_t R = size - 1;
 size_t m;
-if (!array || !value || L > R)
+if (!array || !value)
 return (-1);
 print_array(array, L, R);
-while (L < R)
+while (L <= R)
 {
 m = (L + R) / 2;
 if (array[m] < value)
 {
 L = m + 1;
+if (R > 0 && L <= R)
 print_array(array, L, R);
-
 }
 else if (array[m] > value)
 {
 R = m - 1;
 print_array(array, L, R);
 }
+
 else
+{
 return (m);
+}
 
 }
+
+
 return (-1);
 }

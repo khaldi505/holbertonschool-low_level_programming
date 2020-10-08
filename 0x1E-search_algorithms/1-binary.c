@@ -12,7 +12,7 @@ void print_array(int *array, size_t from, size_t to)
 	while (from <= to)
 	{
 		if (from == to)
-			printf("%d ", array[from]);
+			printf("%d", array[from]);
 		else
 			printf("%d, ", array[from]);
 		from++;
